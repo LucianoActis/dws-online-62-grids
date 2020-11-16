@@ -97,28 +97,6 @@ main .art_principal article:nth-child(2n) img {
     order: 2;
 }
 
-main .art_related {
-    display: -ms-grid;
-    display: grid;
-    /*-ms-grid-columns: 1fr 2fr 1fr;*/
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 20px;
-}
-
-main .art_related article {
-    border-radius: 5px;
-    border: 1px solid #f2f2f2;
-}
-
-main .art_related article img {
-    height: 100px;
-    width: 100%;
-}
-
-main .art_related article h2, main .art_related article p {
-    padding: 10px;
-}
-
 @media screen and (max-width: 1000px) {
     aside {
         width: 120px;
@@ -151,12 +129,6 @@ main .art_related article h2, main .art_related article p {
         /*-webkit-box-ordinal-group: unset;*/
         /*-ms-flex-order: unset;*/
         order: unset;
-    }
-    main .art_related {
-        /*-ms-grid-columns: (1fr)[2];*/
-        grid-template-columns: repeat(2, 1fr);
-        /*para que se acomoden automaticamente sin dejar vacios*/
-        grid-auto-flow: dense;
     }
 }
 
@@ -194,13 +166,5 @@ main .art_related article h2, main .art_related article p {
     }
     main {
         width: 100%;
-    }
-    main .art_related {
-        /*-ms-grid-columns: 1fr;*/
-        grid-template-columns: 1fr;
-    }
-    main .art_related .big_article {
-        /*-ms-grid-column-span: 1;*/
-        grid-column-end: span 1;
     }
 }
